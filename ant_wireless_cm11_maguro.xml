@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This manifest turns on ANT+ in maguro -->
+<!-- Along with this manifest, include the "Bluedroid ANT stack" files for CM11 -->
+<manifest>
+  <remote name="rohan_ant_cm11_maguro" fetch="git://github.com/rohanmartin" 
+    revision="cm-11.0+ant_plus_maguro" />
+
+<!-- Native ANT Stack: -->
+  <remove-project name="TheMuppets/proprietary_vendor_samsung" />
+  <remove-project name="CyanogenMod/android_device_samsung_tuna" />
+
+  <project name="proprietary_vendor_samsung"
+    path="vendor/samsung"
+    remote="rohan_ant_cm11_maguro"
+  />
+
+  <project name="android_device_samsung_tuna"
+    path="device/samsung/tuna"
+    remote="rohan_ant_cm11_maguro"
+  />
+</manifest>
