@@ -50,4 +50,11 @@
     remote="rohan_ant_cm11"
   />
 
+  <remove-project name="CyanogenMod/android_external_ant-wireless_ant_service" />
+
+  <project name="Android_ANTHALService"
+    path="external/ant-wireless/ant_service"
+    remote="rohan_ant_cm11"
+  />
+
 </manifest>
